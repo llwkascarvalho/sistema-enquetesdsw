@@ -11,11 +11,11 @@
           rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/global.css' %}"/>
     
-
+    {% block head %}{% endblock head %}
 </head>
 <header>
     <div class="container">
-        <h1><a href=""><img class="logo" src="{% static 'images/logo.png' %}"
+        <h1><a href="{% url 'index'%}"><img class="logo" src="{% static 'images/logo.png' %}"
                                              alt="logomarca: Q dentro de um quadrado"/></a></h1>
         <nav>
             <ul>
